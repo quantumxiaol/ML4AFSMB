@@ -52,11 +52,8 @@ python All.py
 conda create -n lce_prediction python=3.10 -y
 conda activate lce_prediction
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the analysis
-python All.py
+# Install core dependencies manually
+pip install numpy==1.24.4 scipy==1.10.1 pandas==2.0.3 matplotlib scikit-learn xgboost lightgbm mlxtend shap statsmodels seaborn openpyxl joblib
 ```
 
 > **Note**: If `minepy` fails to build, it's safe to skip — it is not used by `All.py`. Simply install the core dependencies manually:
