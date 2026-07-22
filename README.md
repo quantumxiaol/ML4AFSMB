@@ -1,5 +1,6 @@
 # ML4AFSMB
-## This is the original data of article: https://pubs.acs.org/doi/10.1021/jacs.6c05130 (Data-Driven Knowledge Discovery Reveals Quantitative Electrolyte Design Rules for Anode-Free Sodium Metal Batteries)
+## This is the original data of article: Data-Driven Knowledge Discovery Reveals Quantitative Electrolyte Design Rules for Anode-Free Sodium Metal Batteries
+### If you use this code in your research, please cite this article:https://doi.org/10.1021/jacs.6c05130  
 ## Project Structure
 
 ```
@@ -79,7 +80,4 @@ See `requirements.txt` for the full dependency list.
 
 All random seeds are fixed (`random_state=42`). Running the script on the same data files will produce identical results.
 
-## Citation
-
-If you use this code in your research, please cite:
 
