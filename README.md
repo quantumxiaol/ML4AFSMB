@@ -1,5 +1,5 @@
 # ML4AFSMB
-## This is the original data of article:
+## This is the original data of article: https://pubs.acs.org/doi/10.1021/jacs.6c05130 (Data-Driven Knowledge Discovery Reveals Quantitative Electrolyte Design Rules for Anode-Free Sodium Metal Batteries)
 ## Project Structure
 
 ```
