@@ -1,0 +1,34 @@
+[project]
+name = "ml4afsmb"
+version = "0.1.0"
+description = "ML4AFSMB project dependencies"
+requires-python = ">=3.10"
+dependencies = [
+    # All.py 实际 import 且调用的包
+    "numpy==1.24.4",
+    "pandas==2.0.3",
+    "scipy==1.10.1",
+    "scikit-learn==1.3.2",
+    "matplotlib==3.7.3",
+    "seaborn==0.13.2",
+    "shap==0.44.1",
+    "xgboost==2.1.1",
+    "lightgbm==4.5.0",
+    "joblib==1.4.2",
+    "openpyxl==3.1.5",
+    # 仅因 All.py 顶部 import 了从未使用的符号；
+    # 删掉 All.py 第 18 行(SFS)和第 30 行(variance_inflation_factor)后，这两个可以一并移除
+    "mlxtend==0.23.4",
+    "statsmodels==0.14.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# 当前网络访问 pypi.org 很慢（单次请求 >8s），下载走阿里云镜像。
+# 不需要镜像时删掉这一段，再执行 `uv lock --refresh` 即可切回官方源。
+[[tool.uv.index]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple"
+default = true
